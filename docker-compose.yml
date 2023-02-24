@@ -6,7 +6,7 @@ services:
     build:
       context: ./src/
     environment:
-      - BookStore_ConnectionStrings_Catalog=Host=db:5432;Database=Catalog;Username=root;Password=root
+      - BookStore_ConnectionStrings__Catalog=Host=db:5432;Database=Catalog;Username=admin;Password=root
     ports:
       - "8000:80"
     depends_on:
@@ -19,9 +19,8 @@ services:
       - 5432:5432
     restart: always
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: bookstore
   pgadmin:
     container_name: pgadmin4
     image: dpage/pgadmin4

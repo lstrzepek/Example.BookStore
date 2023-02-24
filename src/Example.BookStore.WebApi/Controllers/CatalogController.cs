@@ -1,4 +1,3 @@
-using System.Reflection;
 using Example.BookStore.Catalog.Contracts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
