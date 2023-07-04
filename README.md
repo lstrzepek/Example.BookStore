@@ -11,7 +11,7 @@
 
 1. Build and run application with dependencies
 ```
-docker-compose run
+docker-compose up
 ```
 2. Setup database
 ```
